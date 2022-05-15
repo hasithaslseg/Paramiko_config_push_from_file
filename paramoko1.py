@@ -20,10 +20,6 @@ with open("node_list.txt") as f1:
 with open("command_list.txt") as f2:
     command=f2.readlines()
 
-
-
-#command = ["enable\n","\n","test\n","\n","ter len 0\n","\n","config t\n","\n","hostname DR-3\n","do show ip int br","\n"]
-
 for hostname1 in node_list:
 
     ssh = paramiko.SSHClient()
